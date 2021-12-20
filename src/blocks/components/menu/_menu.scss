@@ -1,0 +1,226 @@
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    height: 100vh;
+    width: 64px;
+    transition: 0.2s;
+
+    @media screen and (max-width: 575px) {
+        width: 40px;
+    }
+
+    &--opened {
+        width: 200px;
+
+        @media screen and (max-width: 575px) {
+            width: 140px;
+            position: fixed;
+            z-index: 3;
+        }
+
+        .menu__text {
+            opacity: 1;
+        }
+    }
+
+    &--mobile {
+        overflow: hidden;
+    }
+
+    &__header {
+        padding: 19px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
+        text-decoration: none;
+
+        @media screen and (max-width: 1440px) {
+            display: none;
+        }
+
+        &--small {
+            display: none;
+
+            @media screen and (max-width: 1440px) {
+                display: block;
+            }
+        }
+    }
+
+    &__item {
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $light-blue;
+            .menu__link {
+                .menu__icon {
+                    svg {
+                        path {
+                            stroke: $black;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+
+            .menu__text {
+                color: $black;
+            }
+        }
+
+        &--active {
+            background-color: $light-blue;
+
+            .menu__link {
+                .menu__icon {
+                    svg {
+                        path {
+                            stroke: $black;
+                        }
+                    }
+                }
+            }
+
+            .menu__text {
+                color: $black;
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 23px;
+
+        @media screen and (max-width: 575px) {
+            padding: 11px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            @media screen and (max-width: 575px) {
+                width: 15px;
+                height: auto;
+            }
+        }
+    }
+
+    &__text {
+        display: block;
+        color: $white;
+        font-size: 12px;
+        line-height: 130%;
+        transition: 0.2s;
+        white-space: nowrap;
+        opacity: 0;
+
+        @media screen and (max-width: 575px) {
+            font-size: 10px;
+        }
+
+        // @media screen and (max-width: 1440px) {
+        //     display: none;
+        // }
+    }
+}
+
+.menu-state {
+    position: fixed;
+    left: 22px;
+    top: 100%;
+    transform: translateY(-50px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 575px) {
+        left: 11px;
+        transform: translateY(-30px);
+    }
+
+    &:hover {
+        .menu-state__icon {
+            path {
+                fill: $white;
+            }
+        }
+
+        .menu-state__text {
+            color: $white;
+        }
+    }
+
+    &--active {
+        .menu-state__icon {
+            transform: rotate(180deg);
+        }
+
+        .menu-state__text {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+
+        @media screen and (max-width: 575px) {
+            width: 15px;
+            height: 15px;
+        }
+
+        path {
+            transition: 0.2s;
+        }
+    }
+
+    &__text {
+        display: block;
+        padding-left: 11px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 130%;
+        color: #adadad;
+        transition: 0.2s;
+        opacity: 0;
+
+        @media screen and (max-width: 575px) {
+            font-size: 10px;
+            padding-left: 7px;
+        }
+    }
+}
+
+.menu-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    top: 0;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}

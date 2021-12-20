@@ -1,0 +1,22 @@
+.header {
+    background-color: $white;
+    padding-left: 20px;
+    padding-right: calc(50% - 610px);
+
+    @media screen and (max-width: 1260px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

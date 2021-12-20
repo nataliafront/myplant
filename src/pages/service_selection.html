@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Первая страница. Выбор услуги и загрузка файла модели</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('../blocks/modules/header/header.html')
+            <div class="general">
+                @@include('../blocks/components/menu/menu.html')
+                <main class="main">
+                    <div class="block">
+                        <div class="container">
+                            <div class="unit">
+                                <div class="unit__header">
+                                    <h2 class="block-title unit__title">Выберите услугу</h2>
+                                </div>
+                                <div class="unit__body">
+                                    <div class="checklist">
+                                        <label class="custom-check checklist__item">
+                                            <input
+                                                type="radio"
+                                                class="radio radio--hidden"
+                                                name="one-group"
+                                                checked
+                                            />
+                                            <div class="custom-check__wrap">
+                                                <div class="custom-check__header">
+                                                    <span class="custom-check__select"></span>
+                                                    <div class="custom-check__info">
+                                                        <span class="custom-check__title">3D печать</span>
+                                                    </div>
+                                                </div>
+                                                <p class="custom-check__desc">
+                                                    Oт прототипа до готовых деталей с использованием
+                                                    технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                </p>    
+                                            </div>
+                                            
+                                        </label>
+                                        <label class="custom-check checklist__item">
+                                            <input
+                                                type="radio"
+                                                class="radio radio--hidden"
+                                                name="one-group"
+                                                checked
+                                            />
+                                            <div class="custom-check__wrap">
+                                                <div class="custom-check__header">
+                                                    <span class="custom-check__select"></span>
+                                                    <div class="custom-check__info">
+                                                        <span class="custom-check__title">3D печать</span>
+                                                    </div>
+                                                </div>
+                                                <p class="custom-check__desc">
+                                                    Oт прототипа до готовых деталей с использованием
+                                                    технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                </p>    
+                                            </div>
+                                            
+                                        </label>
+                                        <label class="custom-check checklist__item">
+                                            <input
+                                                type="radio"
+                                                class="radio radio--hidden"
+                                                name="one-group"
+                                                checked
+                                            />
+                                            <div class="custom-check__wrap">
+                                                <div class="custom-check__header">
+                                                    <span class="custom-check__select"></span>
+                                                    <div class="custom-check__info">
+                                                        <span class="custom-check__title">3D печать</span>
+                                                    </div>
+                                                </div>
+                                                <p class="custom-check__desc">
+                                                    Oт прототипа до готовых деталей с использованием
+                                                    технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                </p>    
+                                            </div>
+                                            
+                                        </label>
+                                        <label class="custom-check checklist__item">
+                                            <input
+                                                type="radio"
+                                                class="radio radio--hidden"
+                                                name="one-group"
+                                                checked
+                                            />
+                                            <div class="custom-check__wrap">
+                                                <div class="custom-check__header">
+                                                    <span class="custom-check__select"></span>
+                                                    <div class="custom-check__info">
+                                                        <span class="custom-check__title">3D печать</span>
+                                                    </div>
+                                                </div>
+                                                <p class="custom-check__desc">
+                                                    Oт прототипа до готовых деталей с использованием
+                                                    технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                </p>    
+                                            </div>
+                                            
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="content__wrap">
+                                <div class="content__block">
+                                    <div class="unit">
+                                        <div class="unit__header">
+                                            <h2 class="block-title unit__title">Загрузите детали</h2>
+                                            @@include('../blocks/components/button/button.html', { text: '3D печать', mod: '3'})
+                                        </div>
+                                        <div class="unit__body">
+                                            <div class="loading">
+                                                <div class="loading__info">
+                                                    <div class="loading__info-header">
+                                                        <h2 class="block-title unit__title">Перетащите модели и чертежи САПР  или</h2>
+                                                        @@include('../blocks/components/button/button.html', { text: 'Выбрать файлы', mod: '2'})
+                                                    </div>
+                                                    <div class="loading__info-body">
+                                                        <div class="loading__info-list">
+                                                            <div class="loading__info-item">
+                                                                <svg width="69" height="84" viewBox="0 0 69 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g filter="url(#filter0_i_202_198)">
+                                                                    <path d="M1 0H45.3478L69 23.5686V84H1V0Z" fill="black" fill-opacity="0.09"/>
+                                                                    <path d="M49 24H69L45 0V20C45 22.2091 46.7909 24 49 24Z" fill="black" fill-opacity="0.15"/>
+                                                                    <path d="M18 57.8365H19.7181V56.1062H18V57.8365ZM21.0822 56.6785C21.0822 56.6785 22.2592 58 24.3967 58C26.3988 58 27.5622 56.7057 27.5622 55.1662C27.5622 52.0735 23.0438 52.496 23.0438 50.7794C23.0438 50.0981 23.6796 49.6213 24.4913 49.6213C25.6953 49.6213 26.6152 50.4659 26.6152 50.4659L27.3728 49.0354C27.3728 49.0354 26.3988 48 24.5049 48C22.665 48 21.2851 49.1989 21.2851 50.8066C21.2851 53.7766 25.8171 53.4768 25.8171 55.2071C25.8171 55.9973 25.1542 56.3787 24.4237 56.3787C23.0708 56.3787 22.0292 55.3569 22.0292 55.3569L21.0822 56.6785ZM31.2921 57.8365H33.0372V49.6758H36.1892V48.1635H28.14V49.6758H31.2921V57.8365ZM37.4546 57.8365H43.4205V56.3242H39.1998V53.7221H42.433V52.2098H39.1998V49.6758H43.204V48.1635H37.4546V57.8365ZM45.2359 57.8365H46.981V54.4986H48.9427C50.7419 54.4986 52 53.1908 52 51.3107C52 49.4306 50.7419 48.1635 48.9427 48.1635H45.2359V57.8365ZM46.981 52.9728V49.6758H48.645C49.6326 49.6758 50.2278 50.3161 50.2278 51.3107C50.2278 52.3188 49.6326 52.9728 48.618 52.9728H46.981Z" fill="#333333"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                    <filter id="filter0_i_202_198" x="1" y="-0.941043" width="68" height="84.941" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                                    <feOffset dy="-0.941043"/>
+                                                                    <feGaussianBlur stdDeviation="2"/>
+                                                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_202_198"/>
+                                                                    </filter>
+                                                                    </defs>
+                                                                </svg>    
+                                                            </div>
+                                                            <div class="loading__info-item">
+                                                                <svg width="69" height="84" viewBox="0 0 69 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g filter="url(#filter0_i_202_204)">
+                                                                    <path d="M0 0H44.3478L68 23.5686V84H0V0Z" fill="black" fill-opacity="0.09"/>
+                                                                    <path d="M47.9999 24H68L44 0V20C44 22.2091 45.7908 24 47.9999 24Z" fill="black" fill-opacity="0.15"/>
+                                                                    <path d="M8 57.8365H9.76057V56.1062H8V57.8365ZM11.1584 56.6785C11.1584 56.6785 12.3645 58 14.5548 58C16.6065 58 17.7986 56.7057 17.7986 55.1662C17.7986 52.0735 13.1685 52.496 13.1685 50.7794C13.1685 50.0981 13.82 49.6213 14.6518 49.6213C15.8857 49.6213 16.8283 50.4659 16.8283 50.4659L17.6046 49.0354C17.6046 49.0354 16.6065 48 14.6657 48C12.7803 48 11.3663 49.1989 11.3663 50.8066C11.3663 53.7766 16.0104 53.4768 16.0104 55.2071C16.0104 55.9973 15.3312 56.3787 14.5825 56.3787C13.1963 56.3787 12.1288 55.3569 12.1288 55.3569L11.1584 56.6785ZM19.583 57.8365H25.6272V56.3242H21.3713V48.1635H19.583V57.8365ZM27.0559 57.8365H30.4107C33.4466 57.8365 35.429 56.0381 35.429 52.9863C35.429 49.9346 33.4466 48.1635 30.4107 48.1635H27.0559V57.8365ZM28.8441 56.3242V49.6758H30.3136C32.2821 49.6758 33.5852 50.8338 33.5852 52.9863C33.5852 55.1662 32.3099 56.3242 30.3136 56.3242H28.8441ZM37.304 57.8365H39.0923V54.4986H41.1024C42.9462 54.4986 44.2354 53.1908 44.2354 51.3107C44.2354 49.4306 42.9462 48.1635 41.1024 48.1635H37.304V57.8365ZM39.0923 52.9728V49.6758H40.7974C41.8094 49.6758 42.4194 50.3161 42.4194 51.3107C42.4194 52.3188 41.8094 52.9728 40.7697 52.9728H39.0923ZM45.8193 57.8365H47.6077V54.2261H49.3266L51.2812 57.8365H53.2775L51.2535 54.2261C51.0594 53.8856 50.9208 53.7493 50.9208 53.7493V53.7221C51.9605 53.3133 52.5843 52.237 52.5843 51.079C52.5843 49.7984 51.9605 48.872 50.9763 48.436C50.5466 48.2453 50.0614 48.1635 48.9939 48.1635H45.8193V57.8365ZM47.6077 52.7003V49.6758H48.9662C50.3663 49.6758 50.7684 50.2479 50.7684 51.1744C50.7684 52.1417 50.1723 52.7003 49.2157 52.7003H47.6077ZM56.9817 57.8365H58.77V49.6758H62V48.1635H53.7517V49.6758H56.9817V57.8365Z" fill="#333333"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                    <filter id="filter0_i_202_204" x="0" y="-0.941043" width="68" height="84.941" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                                    <feOffset dy="-0.941043"/>
+                                                                    <feGaussianBlur stdDeviation="2"/>
+                                                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_202_204"/>
+                                                                    </filter>
+                                                                    </defs>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="loading__info-item">
+                                                                <svg width="69" height="84" viewBox="0 0 69 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g filter="url(#filter0_i_202_210)">
+                                                                    <path d="M0 0H44.9999L69 23.5686V84H0V0Z" fill="black" fill-opacity="0.09"/>
+                                                                    <path d="M48.9999 24H69L45 0V20C45 22.2091 46.7908 24 48.9999 24Z" fill="black" fill-opacity="0.15"/>
+                                                                    <path d="M24 57.6881H25.7598V55.9879H24V57.6881ZM30.3026 55.3453C30.3026 55.3453 30.3996 55.5595 30.4965 55.7069L31.7297 57.6881H33.6836L31.3556 54.2342L33.6282 50.8607H31.6328L30.5381 52.7215C30.4272 52.8956 30.3026 53.1499 30.3026 53.1499H30.2748C30.2748 53.1499 30.1501 52.8956 30.0392 52.7215L28.9446 50.8607H26.9492L29.2217 54.2342L26.8938 57.6881H28.8475L30.0809 55.7069C30.1778 55.5595 30.2748 55.3453 30.2748 55.3453H30.3026ZM34.2021 57.6881V59H41.9756V57.6881H34.2021ZM43.5219 55.1847C43.5219 57.4739 45.4758 57.7551 46.4596 57.7551C46.7921 57.7551 47 57.7148 47 57.7148V56.229C47 56.229 46.8753 56.2557 46.6812 56.2557C46.1962 56.2557 45.2817 56.095 45.2817 54.9706V52.32H46.8891V50.9678H45.2817V49H43.5635V50.9678H42.6073V52.32H43.5219V55.1847Z" fill="#333333"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                    <filter id="filter0_i_202_210" x="0" y="-0.941043" width="69" height="84.941" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                                    <feOffset dy="-0.941043"/>
+                                                                    <feGaussianBlur stdDeviation="2"/>
+                                                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_202_210"/>
+                                                                    </filter>
+                                                                    </defs>
+                                                                    </svg>
+                                                                        
+                                                            </div>
+                                                            <div class="loading__info-item">
+                                                                <svg width="69" height="84" viewBox="0 0 69 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g filter="url(#filter0_i_202_216)">
+                                                                    <path d="M0 0H44.9999L69 23.5686V84H0V0Z" fill="black" fill-opacity="0.09"/>
+                                                                    <path d="M48.9999 24H69L45 0V20C45 22.2091 46.7908 24 48.9999 24Z" fill="black" fill-opacity="0.15"/>
+                                                                    <path d="M21 58H22.747V56.2112H21V58ZM24.7694 58H26.5438V54.5493H28.5384C30.3679 54.5493 31.6472 53.1972 31.6472 51.2536C31.6472 49.3099 30.3679 48 28.5384 48H24.7694V58ZM26.5438 52.9719V49.5634H28.2358C29.2399 49.5634 29.8452 50.2254 29.8452 51.2536C29.8452 52.2958 29.2399 52.9719 28.2082 52.9719H26.5438ZM33.2189 58H36.5477C39.5602 58 41.5272 56.1408 41.5272 52.9859C41.5272 49.831 39.5602 48 36.5477 48H33.2189V58ZM34.9933 56.4366V49.5634H36.4514C38.4047 49.5634 39.6977 50.7605 39.6977 52.9859C39.6977 55.2395 38.4323 56.4366 36.4514 56.4366H34.9933ZM43.3878 58H45.1622V53.9578H48.3948V52.3944H45.1622V49.5634H49V48H43.3878V58Z" fill="#333333"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                    <filter id="filter0_i_202_216" x="0" y="-0.941043" width="69" height="84.941" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                                    <feOffset dy="-0.941043"/>
+                                                                    <feGaussianBlur stdDeviation="2"/>
+                                                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_202_216"/>
+                                                                    </filter>
+                                                                    </defs>
+                                                                </svg>                                                                 
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button-link">Показать больше поддерживаемых типов файлов</a>
+                                                    </div>
+                                                    <div class="afterword">
+                                                        <p class="afterword__text">
+                                                            Загруженные  файлы находятся в безопасности и  строго защищены,  
+                                                            <a href="#" class="button-link afterword__link">политика  безопасности Мой Завод</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__block">
+                                    <div class="unit">
+                                        <div class="unit__header">
+                                            <h2 class="block-title unit__title">Дополнительные услуги</h2>
+                                        </div>
+                                        <div class="unit__body">
+                                            <div class="checklist checklist--column">
+                                                <label class="custom-check checklist__item">
+                                                    <input
+                                                        type="radio"
+                                                        class="radio radio--hidden"
+                                                        name="one-group"
+                                                        checked
+                                                    />
+                                                    <div class="custom-check__wrap">
+                                                        <div class="custom-check__header">
+                                                            <span class="custom-check__select"></span>
+                                                            <div class="custom-check__info">
+                                                                <span class="custom-check__title">3D печать</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="custom-check__desc">
+                                                            Oт прототипа до готовых деталей с использованием
+                                                            технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                        </p>    
+                                                    </div>
+                                                    
+                                                </label>
+                                                <label class="custom-check checklist__item">
+                                                    <input
+                                                        type="radio"
+                                                        class="radio radio--hidden"
+                                                        name="one-group"
+                                                        checked
+                                                    />
+                                                    <div class="custom-check__wrap">
+                                                        <div class="custom-check__header">
+                                                            <span class="custom-check__select"></span>
+                                                            <div class="custom-check__info">
+                                                                <span class="custom-check__title">3D печать</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="custom-check__desc">
+                                                            Oт прототипа до готовых деталей с использованием
+                                                            технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                        </p>    
+                                                    </div>
+                                                    
+                                                </label>
+                                                <label class="custom-check checklist__item">
+                                                    <input
+                                                        type="radio"
+                                                        class="radio radio--hidden"
+                                                        name="one-group"
+                                                        checked
+                                                    />
+                                                    <div class="custom-check__wrap">
+                                                        <div class="custom-check__header">
+                                                            <span class="custom-check__select"></span>
+                                                            <div class="custom-check__info">
+                                                                <span class="custom-check__title">3D печать</span>
+                                                            </div>
+                                                        </div>
+                                                        <p class="custom-check__desc">
+                                                            Oт прототипа до готовых деталей с использованием
+                                                            технологий FDM, SLS, SLA, PolyJet и Multi Jet Fusion
+                                                        </p>    
+                                                    </div>
+                                                    
+                                                </label>
+                                            </div>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

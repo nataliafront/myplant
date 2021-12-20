@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Страница входа</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            <main class="main">
+                @@include('../blocks/components/logo/logo.html', { mod: 'big'})
+                <div class="auth">
+                    <div class="white-block">
+                        <h2 class="section-title white-block__title">Вход в систему МойЗавод</h2>
+                        <div class="white-block__body">
+                            <div class="field">
+                                <input
+                                    class="field__input"
+                                    type="email"
+                                    placeholder="Введите ваш e-mail"
+                                    id="email"
+                                />
+                            </div>
+                            <div class="field">
+                                <input
+                                    class="field__input"
+                                    type="password"
+                                    placeholder="Введите пароль"
+                                    id="password"
+                                />
+                            </div>
+                        </div>
+                        <div class="white-block__footer">
+                            @@include('../blocks/components/button/button.html', { text: 'Войти', mod: 'default'})
+                            <a href="#" class="button-link">Сбросить пароль</a>
+                        </div>
+                    </div>
+                    <div class="afterword">
+                        <p class="afterword__text">
+                            Необходимо создать учетную запись?
+                            <a href="#" class="button-link afterword__link">Зарегистрироваться</a>
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

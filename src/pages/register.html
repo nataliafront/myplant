@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Страница регистрации</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="registers">
+                <div class="registers__block registers__block--bg">
+                    <div class="registers-info">
+                        <h2 class="section-title registers-info__title">Присоединяйтесь к 500+ компаниям, которые используют МойЗавод для производства высококачественных запчастей</h2>
+                        <ul class="registers-info__list">
+                            <li class="registers-info__item">
+                                Изготовление деталей от 2 дней
+                            </li>
+                            <li class="registers-info__item">
+                                Используем форматы .STEP , .STL , .OBJ и др
+                            </li>
+                            <li class="registers-info__item">
+                                Контроль качества для каждой детали
+                            </li>
+                            <li class="registers-info__item">
+                                Сертификаты соотвестивя на продукцию
+                            </li>
+                            <li class="registers-info__item">
+                                Большое количество операций в одном месте
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registers__block registers__block--white">
+                    <main class="main">
+                        @@include('../blocks/components/logo/logo.html', { mod: 'big'})
+                        
+                        <div class="white-block">
+                            <h1 class="section-title white-block__title">Вход в систему МойЗавод</h1>
+                            <div class="white-block__body">
+                                <div class="field">
+                                    
+                                    <input
+                                        class="field__input"
+                                        type="text"
+                                        placeholder="Введите ваше имя"
+                                        id="name"
+                                    />
+                                </div>
+                                <div class="field">
+                                    
+                                    <input
+                                        class="field__input"
+                                        type="email"
+                                        placeholder="Введите ваш e-mail"
+                                        id="email"
+                                    />
+                                </div>
+                                <div class="field">
+                                    
+                                    <input
+                                        class="field__input"
+                                        type="password"
+                                        placeholder="Введите пароль"
+                                        id="password"
+                                    />
+                                </div>
+                                <div class="field field--phone">
+                                    
+                                    <input
+                                        class="field__input"
+                                        type="tel"
+                                        placeholder="+7 (913) 042-23-42"
+                                        id="phone"
+                                    />
+                                </div>
+                            </div>
+                            <div class="white-block__footer">
+                                @@include('../blocks/components/button/button.html', { text: 'Создать аккаунт', mod: 'default'})
+                                <p class="white-block__footer-text">
+                                    Уже есть аккаунт?
+                                    <a href="login.html" class="button-link">Войти</a>
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="afterword">
+                            <p class="afterword__text">
+                                Создавая учетную запись, я принимаю <a href="#" class="button-link afterword__link">Условия использования</a> и <a href="#" class="button-link afterword__link">Политику конфиденциальности</a>
+                            </p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

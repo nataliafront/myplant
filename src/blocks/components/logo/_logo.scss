@@ -1,0 +1,29 @@
+.logo {
+    display: block;
+    text-decoration: none;
+
+    svg {
+        width: 146px;
+        height: 32px;
+    }
+
+    &--small {
+        width: 100px;
+        height: 22px;
+
+        @media screen and (max-width: 575px) {
+            width: 75px;
+            height: 17px;
+        }
+
+        svg {
+            width: 100px;
+            height: 22px;
+
+            @media screen and (max-width: 575px) {
+                width: 75px;
+                height: 17px;
+            }
+        }
+    }
+}
