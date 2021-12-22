@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Страница Аккаунта при редактировании</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('../blocks/modules/header/header.html')
+            <div class="general">
+                @@include('../blocks/components/menu/menu.html')
+                <main class="main">
+                    <div class="bowl">
+                        <div class="container">
+                            <div class="substance">
+                                <div class="account">
+                                    <span class="account-title">Информация о пользователе</span>
+                                    <div class="account__content">
+                                        <div class="account__left">
+                                            <div class="account__fields">
+                                                <div class="field">
+                                    
+                                                    <input
+                                                        class="field__input"
+                                                        type="text"
+                                                        placeholder="Введите ваше имя"
+                                                        id="name"
+                                                    />
+                                                </div>
+                                                <div class="field">
+                                                    
+                                                    <input
+                                                        class="field__input"
+                                                        type="email"
+                                                        placeholder="Введите ваш e-mail"
+                                                        id="email"
+                                                    />
+                                                </div>
+                                                <div class="field field--phone">
+                                                    
+                                                    <input
+                                                        class="field__input"
+                                                        type="tel"
+                                                        placeholder="+7 (913) 042-23-42"
+                                                        id="phone"
+                                                    />
+                                                </div>
+                                                <div class="select select--blue">
+                                                    <div class="select__header">
+                                                        <span class="select__current">PayPal</span>
+                                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.96375 6.22031C3.82969 6.05813 3.75 5.85094 3.75 5.625C3.75 5.1075 4.17 4.6875 4.6875 4.6875H10.3125C10.83 4.6875 11.25 5.1075 11.25 5.625C11.25 5.85094 11.1703 6.05813 11.0362 6.22031L8.2575 9.92719C8.08687 10.1606 7.81125 10.3125 7.5 10.3125C7.18875 10.3125 6.91312 10.1606 6.7425 9.92719L3.96375 6.22031Z" fill="#5C5C5C"/>
+                                                        </svg>                                                                                                              
+                                                    </div>
+                                                    <div class="select__body">
+                                                        <div class="select__item">Value 1</div>
+                                                        <div class="select__item">Value 2</div>
+                                                        <div class="select__item">Value 3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account__right">
+                                            <div class="account__buttons">
+                                                <a href="#" class="button-link">Выйти без сохранений</a>
+                                                @@include('../blocks/components/button/button.html', { text: 'Сохранить', mod: '2'})
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="substance">
+                                <div class="account">
+                                    <span class="account-title">Информация для доставки</span>
+                                    <div class="account__content">
+                                        <div class="account__left">
+                                            <div class="account__fields">
+                                                <div class="field">
+                                    
+                                                    <input
+                                                        class="field__input"
+                                                        type="text"
+                                                        placeholder="Введите город"
+                                                        id="city"
+                                                    />
+                                                </div>
+                                                <div class="field">
+                                                    <input
+                                                        class="field__input"
+                                                        type="text"
+                                                        placeholder="Введите адрес"
+                                                        id="address"
+                                                    />
+                                                </div>
+                                                <div class="field">
+                                                    <input
+                                                        class="field__input"
+                                                        type="text"
+                                                        placeholder="Введите номер дома"
+                                                        id="house"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="account__right">
+                                            <div class="account__buttons">
+                                                <a href="#" class="button-link">Выйти без сохранений</a>
+                                                @@include('../blocks/components/button/button.html', { text: 'Сохранить', mod: '2'})
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bowl__footer">
+                                @@include('../blocks/components/logo/logo.html', { mod: 'big'})
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

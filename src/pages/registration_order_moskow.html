@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Страница оформления заказа (самовывоз, Мск)</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('../blocks/modules/header/header.html')
+            <div class="general">
+                @@include('../blocks/components/menu/menu.html')
+                <main class="main">
+                    <div class="page">
+                        <div class="container">
+                            <div class="page__wrap">
+                                <div class="page__header">
+                                    <h3 class="page-title">Оформление заказа</h3>
+                                </div>
+                                <div class="page__body">
+                                    <div class="substance substance--padding-small">
+                                        <div class="offer offer--registration">
+                                            <div class="offer__content">
+                                                <div class="offer__left">
+                                                    <span class="account-title offer__title">Ваш заказ</span>
+                                                    <div class="offer-prev">
+                                                        <ul class="offer-prev__list">
+                                                            <li class="offer-prev__item">
+                                                                <a href="#" class="offer-prev__link">
+                                                                    <div class="offer-prev__pic">
+                                                                        <img src="../images/content/offer-prev-img1.png" alt="">
+                                                                    </div>
+                                                                    <div class="offer-prev__info">
+                                                                        <span class="offer-prev__info-text">Filename.stl (5 шт)</span>
+                                                                        <span class="offer-prev__info-count">1 шт: 2.456 ₽</span>
+                                                                        <span class="offer-prev__info-price">Итого: 12.280 ₽</span>
+                                                                        <div class="counter offer-prev__counter">
+                                                                            <button class="counter__button counter__button--left">
+                                                                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M4.61538 0.5H0.416667C0.186548 0.5 0 0.679087 0 0.9C0 1.12091 0.186548 1.3 0.416667 1.3H4.61538H5.44872H9.58333C9.81345 1.3 10 1.12091 10 0.9C10 0.679087 9.81345 0.5 9.58333 0.5H5.44872H4.61538Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                            <input type="number" class="counter__number" value="5">
+                                                                            <button class="counter__button counter__button--right">
+                                                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M5.44872 0.916667C5.44872 0.686548 5.26217 0.5 5.03205 0.5C4.80193 0.5 4.61538 0.686548 4.61538 0.916667V5.05128H0.416667C0.186548 5.05128 0 5.23783 0 5.46795C0 5.69807 0.186548 5.88461 0.416667 5.88461H4.61538V10.0833C4.61538 10.3135 4.80193 10.5 5.03205 10.5C5.26217 10.5 5.44872 10.3135 5.44872 10.0833V5.88461H9.58333C9.81345 5.88461 10 5.69807 10 5.46795C10 5.23783 9.81345 5.05128 9.58333 5.05128H5.44872V0.916667Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="offer-prev__btn-exit">
+                                                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.38521 6.83569C7.42157 6.87167 7.45044 6.91452 7.47015 6.96176C7.48985 7.00901 7.5 7.0597 7.5 7.1109C7.5 7.16209 7.48985 7.21278 7.47015 7.26003C7.45044 7.30727 7.42157 7.35012 7.38521 7.3861C7.31231 7.45904 7.21349 7.5 7.11045 7.5C7.00742 7.5 6.9086 7.45904 6.8357 7.3861L4 4.54573L1.1643 7.3861C1.0914 7.45904 0.992582 7.5 0.889548 7.5C0.786514 7.5 0.687693 7.45904 0.614792 7.3861C0.578428 7.35012 0.549556 7.30727 0.529852 7.26003C0.510147 7.21278 0.5 7.16209 0.5 7.1109C0.5 7.0597 0.510147 7.00901 0.529852 6.96176C0.549556 6.91452 0.578428 6.87167 0.614792 6.83569L3.45049 3.99531L0.614792 1.15494C0.546113 1.08112 0.508723 0.983471 0.510501 0.882577C0.512278 0.781684 0.553083 0.68542 0.624319 0.614067C0.695555 0.542713 0.79166 0.501841 0.892388 0.500061C0.993115 0.498281 1.0906 0.535731 1.1643 0.604523L4 3.44489L6.8357 0.604523C6.9094 0.535731 7.00688 0.498281 7.10761 0.500061C7.20834 0.501841 7.30444 0.542713 7.37568 0.614067C7.44692 0.68542 7.48772 0.781684 7.4895 0.882577C7.49128 0.983471 7.45389 1.08112 7.38521 1.15494L4.54951 3.99531L7.38521 6.83569Z" fill="#333333"/>
+                                                                        </svg>                                                                            
+                                                                    </button>
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                            <li class="offer-prev__item">
+                                                                <a href="#" class="offer-prev__link">
+                                                                    <div class="offer-prev__pic">
+                                                                        <img src="../images/content/offer-prev-img1.png" alt="">
+                                                                    </div>
+                                                                    <div class="offer-prev__info">
+                                                                        <span class="offer-prev__info-text">Filename.stl (5 шт)</span>
+                                                                        <span class="offer-prev__info-count">1 шт: 2.456 ₽</span>
+                                                                        <span class="offer-prev__info-price">Итого: 12.280 ₽</span>
+                                                                        <div class="counter offer-prev__counter">
+                                                                            <button class="counter__button counter__button--left">
+                                                                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M4.61538 0.5H0.416667C0.186548 0.5 0 0.679087 0 0.9C0 1.12091 0.186548 1.3 0.416667 1.3H4.61538H5.44872H9.58333C9.81345 1.3 10 1.12091 10 0.9C10 0.679087 9.81345 0.5 9.58333 0.5H5.44872H4.61538Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                            <input type="number" class="counter__number" value="5">
+                                                                            <button class="counter__button counter__button--right">
+                                                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M5.44872 0.916667C5.44872 0.686548 5.26217 0.5 5.03205 0.5C4.80193 0.5 4.61538 0.686548 4.61538 0.916667V5.05128H0.416667C0.186548 5.05128 0 5.23783 0 5.46795C0 5.69807 0.186548 5.88461 0.416667 5.88461H4.61538V10.0833C4.61538 10.3135 4.80193 10.5 5.03205 10.5C5.26217 10.5 5.44872 10.3135 5.44872 10.0833V5.88461H9.58333C9.81345 5.88461 10 5.69807 10 5.46795C10 5.23783 9.81345 5.05128 9.58333 5.05128H5.44872V0.916667Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="offer-prev__btn-exit">
+                                                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.38521 6.83569C7.42157 6.87167 7.45044 6.91452 7.47015 6.96176C7.48985 7.00901 7.5 7.0597 7.5 7.1109C7.5 7.16209 7.48985 7.21278 7.47015 7.26003C7.45044 7.30727 7.42157 7.35012 7.38521 7.3861C7.31231 7.45904 7.21349 7.5 7.11045 7.5C7.00742 7.5 6.9086 7.45904 6.8357 7.3861L4 4.54573L1.1643 7.3861C1.0914 7.45904 0.992582 7.5 0.889548 7.5C0.786514 7.5 0.687693 7.45904 0.614792 7.3861C0.578428 7.35012 0.549556 7.30727 0.529852 7.26003C0.510147 7.21278 0.5 7.16209 0.5 7.1109C0.5 7.0597 0.510147 7.00901 0.529852 6.96176C0.549556 6.91452 0.578428 6.87167 0.614792 6.83569L3.45049 3.99531L0.614792 1.15494C0.546113 1.08112 0.508723 0.983471 0.510501 0.882577C0.512278 0.781684 0.553083 0.68542 0.624319 0.614067C0.695555 0.542713 0.79166 0.501841 0.892388 0.500061C0.993115 0.498281 1.0906 0.535731 1.1643 0.604523L4 3.44489L6.8357 0.604523C6.9094 0.535731 7.00688 0.498281 7.10761 0.500061C7.20834 0.501841 7.30444 0.542713 7.37568 0.614067C7.44692 0.68542 7.48772 0.781684 7.4895 0.882577C7.49128 0.983471 7.45389 1.08112 7.38521 1.15494L4.54951 3.99531L7.38521 6.83569Z" fill="#333333"/>
+                                                                        </svg>                                                                            
+                                                                    </button>
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                            <li class="offer-prev__item">
+                                                                <a href="#" class="offer-prev__link">
+                                                                    <div class="offer-prev__pic">
+                                                                        <img src="../images/content/offer-prev-img1.png" alt="">
+                                                                    </div>
+                                                                    <div class="offer-prev__info">
+                                                                        <span class="offer-prev__info-text">Filename.stl (5 шт)</span>
+                                                                        <span class="offer-prev__info-count">1 шт: 2.456 ₽</span>
+                                                                        <span class="offer-prev__info-price">Итого: 12.280 ₽</span>
+                                                                        <div class="counter offer-prev__counter">
+                                                                            <button class="counter__button counter__button--left">
+                                                                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M4.61538 0.5H0.416667C0.186548 0.5 0 0.679087 0 0.9C0 1.12091 0.186548 1.3 0.416667 1.3H4.61538H5.44872H9.58333C9.81345 1.3 10 1.12091 10 0.9C10 0.679087 9.81345 0.5 9.58333 0.5H5.44872H4.61538Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                            <input type="number" class="counter__number" value="5">
+                                                                            <button class="counter__button counter__button--right">
+                                                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M5.44872 0.916667C5.44872 0.686548 5.26217 0.5 5.03205 0.5C4.80193 0.5 4.61538 0.686548 4.61538 0.916667V5.05128H0.416667C0.186548 5.05128 0 5.23783 0 5.46795C0 5.69807 0.186548 5.88461 0.416667 5.88461H4.61538V10.0833C4.61538 10.3135 4.80193 10.5 5.03205 10.5C5.26217 10.5 5.44872 10.3135 5.44872 10.0833V5.88461H9.58333C9.81345 5.88461 10 5.69807 10 5.46795C10 5.23783 9.81345 5.05128 9.58333 5.05128H5.44872V0.916667Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="offer-prev__btn-exit">
+                                                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.38521 6.83569C7.42157 6.87167 7.45044 6.91452 7.47015 6.96176C7.48985 7.00901 7.5 7.0597 7.5 7.1109C7.5 7.16209 7.48985 7.21278 7.47015 7.26003C7.45044 7.30727 7.42157 7.35012 7.38521 7.3861C7.31231 7.45904 7.21349 7.5 7.11045 7.5C7.00742 7.5 6.9086 7.45904 6.8357 7.3861L4 4.54573L1.1643 7.3861C1.0914 7.45904 0.992582 7.5 0.889548 7.5C0.786514 7.5 0.687693 7.45904 0.614792 7.3861C0.578428 7.35012 0.549556 7.30727 0.529852 7.26003C0.510147 7.21278 0.5 7.16209 0.5 7.1109C0.5 7.0597 0.510147 7.00901 0.529852 6.96176C0.549556 6.91452 0.578428 6.87167 0.614792 6.83569L3.45049 3.99531L0.614792 1.15494C0.546113 1.08112 0.508723 0.983471 0.510501 0.882577C0.512278 0.781684 0.553083 0.68542 0.624319 0.614067C0.695555 0.542713 0.79166 0.501841 0.892388 0.500061C0.993115 0.498281 1.0906 0.535731 1.1643 0.604523L4 3.44489L6.8357 0.604523C6.9094 0.535731 7.00688 0.498281 7.10761 0.500061C7.20834 0.501841 7.30444 0.542713 7.37568 0.614067C7.44692 0.68542 7.48772 0.781684 7.4895 0.882577C7.49128 0.983471 7.45389 1.08112 7.38521 1.15494L4.54951 3.99531L7.38521 6.83569Z" fill="#333333"/>
+                                                                        </svg>                                                                            
+                                                                    </button>
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                            <li class="offer-prev__item">
+                                                                <a href="#" class="offer-prev__link">
+                                                                    <div class="offer-prev__pic">
+                                                                        <img src="../images/content/offer-prev-img1.png" alt="">
+                                                                    </div>
+                                                                    <div class="offer-prev__info">
+                                                                        <span class="offer-prev__info-text">Filename.stl (5 шт)</span>
+                                                                        <span class="offer-prev__info-count">1 шт: 2.456 ₽</span>
+                                                                        <span class="offer-prev__info-price">Итого: 12.280 ₽</span>
+                                                                        <div class="counter offer-prev__counter">
+                                                                            <button class="counter__button counter__button--left">
+                                                                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M4.61538 0.5H0.416667C0.186548 0.5 0 0.679087 0 0.9C0 1.12091 0.186548 1.3 0.416667 1.3H4.61538H5.44872H9.58333C9.81345 1.3 10 1.12091 10 0.9C10 0.679087 9.81345 0.5 9.58333 0.5H5.44872H4.61538Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                            <input type="number" class="counter__number" value="5">
+                                                                            <button class="counter__button counter__button--right">
+                                                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M5.44872 0.916667C5.44872 0.686548 5.26217 0.5 5.03205 0.5C4.80193 0.5 4.61538 0.686548 4.61538 0.916667V5.05128H0.416667C0.186548 5.05128 0 5.23783 0 5.46795C0 5.69807 0.186548 5.88461 0.416667 5.88461H4.61538V10.0833C4.61538 10.3135 4.80193 10.5 5.03205 10.5C5.26217 10.5 5.44872 10.3135 5.44872 10.0833V5.88461H9.58333C9.81345 5.88461 10 5.69807 10 5.46795C10 5.23783 9.81345 5.05128 9.58333 5.05128H5.44872V0.916667Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="offer-prev__btn-exit">
+                                                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.38521 6.83569C7.42157 6.87167 7.45044 6.91452 7.47015 6.96176C7.48985 7.00901 7.5 7.0597 7.5 7.1109C7.5 7.16209 7.48985 7.21278 7.47015 7.26003C7.45044 7.30727 7.42157 7.35012 7.38521 7.3861C7.31231 7.45904 7.21349 7.5 7.11045 7.5C7.00742 7.5 6.9086 7.45904 6.8357 7.3861L4 4.54573L1.1643 7.3861C1.0914 7.45904 0.992582 7.5 0.889548 7.5C0.786514 7.5 0.687693 7.45904 0.614792 7.3861C0.578428 7.35012 0.549556 7.30727 0.529852 7.26003C0.510147 7.21278 0.5 7.16209 0.5 7.1109C0.5 7.0597 0.510147 7.00901 0.529852 6.96176C0.549556 6.91452 0.578428 6.87167 0.614792 6.83569L3.45049 3.99531L0.614792 1.15494C0.546113 1.08112 0.508723 0.983471 0.510501 0.882577C0.512278 0.781684 0.553083 0.68542 0.624319 0.614067C0.695555 0.542713 0.79166 0.501841 0.892388 0.500061C0.993115 0.498281 1.0906 0.535731 1.1643 0.604523L4 3.44489L6.8357 0.604523C6.9094 0.535731 7.00688 0.498281 7.10761 0.500061C7.20834 0.501841 7.30444 0.542713 7.37568 0.614067C7.44692 0.68542 7.48772 0.781684 7.4895 0.882577C7.49128 0.983471 7.45389 1.08112 7.38521 1.15494L4.54951 3.99531L7.38521 6.83569Z" fill="#333333"/>
+                                                                        </svg>                                                                            
+                                                                    </button>
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                            <li class="offer-prev__item">
+                                                                <a href="#" class="offer-prev__link">
+                                                                    <div class="offer-prev__pic">
+                                                                        <img src="../images/content/offer-prev-img1.png" alt="">
+                                                                    </div>
+                                                                    <div class="offer-prev__info">
+                                                                        <span class="offer-prev__info-text">Filename.stl (5 шт)</span>
+                                                                        <span class="offer-prev__info-count">1 шт: 2.456 ₽</span>
+                                                                        <span class="offer-prev__info-price">Итого: 12.280 ₽</span>
+                                                                        <div class="counter offer-prev__counter">
+                                                                            <button class="counter__button counter__button--left">
+                                                                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M4.61538 0.5H0.416667C0.186548 0.5 0 0.679087 0 0.9C0 1.12091 0.186548 1.3 0.416667 1.3H4.61538H5.44872H9.58333C9.81345 1.3 10 1.12091 10 0.9C10 0.679087 9.81345 0.5 9.58333 0.5H5.44872H4.61538Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                            <input type="number" class="counter__number" value="5">
+                                                                            <button class="counter__button counter__button--right">
+                                                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M5.44872 0.916667C5.44872 0.686548 5.26217 0.5 5.03205 0.5C4.80193 0.5 4.61538 0.686548 4.61538 0.916667V5.05128H0.416667C0.186548 5.05128 0 5.23783 0 5.46795C0 5.69807 0.186548 5.88461 0.416667 5.88461H4.61538V10.0833C4.61538 10.3135 4.80193 10.5 5.03205 10.5C5.26217 10.5 5.44872 10.3135 5.44872 10.0833V5.88461H9.58333C9.81345 5.88461 10 5.69807 10 5.46795C10 5.23783 9.81345 5.05128 9.58333 5.05128H5.44872V0.916667Z" fill="#5C5C5C"/>
+                                                                                </svg>                                                    
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="offer-prev__btn-exit">
+                                                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.38521 6.83569C7.42157 6.87167 7.45044 6.91452 7.47015 6.96176C7.48985 7.00901 7.5 7.0597 7.5 7.1109C7.5 7.16209 7.48985 7.21278 7.47015 7.26003C7.45044 7.30727 7.42157 7.35012 7.38521 7.3861C7.31231 7.45904 7.21349 7.5 7.11045 7.5C7.00742 7.5 6.9086 7.45904 6.8357 7.3861L4 4.54573L1.1643 7.3861C1.0914 7.45904 0.992582 7.5 0.889548 7.5C0.786514 7.5 0.687693 7.45904 0.614792 7.3861C0.578428 7.35012 0.549556 7.30727 0.529852 7.26003C0.510147 7.21278 0.5 7.16209 0.5 7.1109C0.5 7.0597 0.510147 7.00901 0.529852 6.96176C0.549556 6.91452 0.578428 6.87167 0.614792 6.83569L3.45049 3.99531L0.614792 1.15494C0.546113 1.08112 0.508723 0.983471 0.510501 0.882577C0.512278 0.781684 0.553083 0.68542 0.624319 0.614067C0.695555 0.542713 0.79166 0.501841 0.892388 0.500061C0.993115 0.498281 1.0906 0.535731 1.1643 0.604523L4 3.44489L6.8357 0.604523C6.9094 0.535731 7.00688 0.498281 7.10761 0.500061C7.20834 0.501841 7.30444 0.542713 7.37568 0.614067C7.44692 0.68542 7.48772 0.781684 7.4895 0.882577C7.49128 0.983471 7.45389 1.08112 7.38521 1.15494L4.54951 3.99531L7.38521 6.83569Z" fill="#333333"/>
+                                                                        </svg>                                                                            
+                                                                    </button>
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            <div class="offer__right">
+                                                <span class="account-title offer__title">Информация о заказе</span>
+                                                <div class="offer__right-top">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Количество деталей:</span>
+                                                            <span class="info-list__value">27 шт</span>
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Адрес доставки:</span>
+                                                            <span class="info-list__value">Москва, Мира 1а, квартира 15</span>
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Способ доставки:</span>
+                                                            <span class="info-list__value">Почта РФ</span>
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Дата доставки:</span>
+                                                            <span class="info-list__value">21.11.2021</span>
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Цена доставки:</span>
+                                                            <span class="info-list__value">562 ₽</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="button-link offer__right-btn-link">Изменить данные</a>
+                                                </div>
+                                                <div class="offer__right-bottom">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            <span class="info-list__category">Количество деталей:</span>
+                                                            <span class="info-list__value">27 шт</span>
+                                                        </li>
+                                                        <li class="info-list__item info-list__item--big">
+                                                            <span class="info-list__category">Итоговая стоимость</span>
+                                                            <span class="info-list__value">66.874 ₽</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="offer__buttons">
+                                                        @@include('../blocks/components/button/button.html', { text: 'Оформить заказ', mod: '5'})
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="substance substance--padding-small">
+                                        <div class="city">
+                                            <h3 class="page-title">Город доставки</h3>
+                                            <p class="page-desc">Выберите ваш город из списка ниже, либо введите его в строку поиска</p>
+                                            <ul class="tabs-nav">
+                                                <li class="tabs-nav__item tabs-nav__item--active" data-tab-name="tab-1">Москва</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-2">Санкт-Петербург</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-3">Новосибирск</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-4">Нижний новгород</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-5">Казань</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-6">Челябинск</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="substance substance--padding-small">
+                                        <div class="delivery">
+                                            <h3 class="page-title">Город доставки</h3>
+                                            <p class="page-desc">Выберите ваш город из списка ниже, либо введите его в строку поиска</p>
+                                            <ul class="tabs-nav">
+                                                <li class="tabs-nav__item tabs-nav__item--active" data-tab-name="tab-1">Самовывоз</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-2">Курьерская доставка до двери</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-3">Почта РФ</li>
+                                                <li class="tabs-nav__item" data-tab-name="tab-4">ТК «Деловые линии»</li>
+                                            </ul>
+                                            <div class="tabs-content">
+                                                <div class="tabs-content__item tab-1">
+                                                    1
+                                                </div>
+                                                <div class="tabs-content__item tab-2">
+                                                    2
+                                                </div>
+                                                <div class="tabs-content__item tab-3">
+                                                    3
+                                                </div>
+                                                <div class="tabs-content__item tab-4">
+                                                    4
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

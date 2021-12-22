@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Страница аккаунта</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('../blocks/modules/header/header.html')
+            <div class="general">
+                @@include('../blocks/components/menu/menu.html')
+                <main class="main">
+                    <div class="bowl">
+                        <div class="container">
+                            <div class="substance">
+                                <div class="account">
+                                    <span class="account-title">Информация о пользователе</span>
+                                    <div class="account__content">
+                                        <div class="account__left">
+                                            <ul class="account__list">
+                                                <li class="account__item">
+                                                    <span class="account__category">Имя:</span>
+                                                    <span class="account__value">Иван Быстров</span>
+                                                </li>
+                                                <li class="account__item">
+                                                    <span class="account__category">E-mail:</span>
+                                                    <span class="account__value">test@test.com</span>
+                                                    <span class="account__status">Подтвержден</span>
+                                                </li>
+                                                <li class="account__item">
+                                                    <span class="account__category">Телефон:</span>
+                                                    <span class="account__value">+7 (913) 042-06-78</span>
+                                                </li>
+                                                <li class="account__item">
+                                                    <span class="account__category">Метод оплаты по умолчанию:</span>
+                                                    <span class="account__value">PayPal</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="account__right">
+                                            <div class="account__buttons">
+                                                <a href="#" class="button-link">Сбросить пароль</a>
+                                                @@include('../blocks/components/button/button.html', { text: 'Редактировать', mod: '2'})
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="substance">
+                                <div class="account">
+                                    <span class="account-title">Информация для доставки</span>
+                                    <div class="account__content">
+                                        <div class="account__left">
+                                            <ul class="account__list">
+                                                <li class="account__item">
+                                                    <span class="account__category">Адрес:</span>
+                                                    <span class="account__value">Москва, Мира 1а, квартира 15</span>
+                                                </li>
+                                            </ul>
+                                            <span class="account__afterword">Адрес будет использоваться по умолчанию при оформлении заказа. При желании, вы можете изменить адрес для конкретного заказа.</span>
+                                        </div>
+                                        <div class="account__right">
+                                            <div class="account__buttons">
+                                                @@include('../blocks/components/button/button.html', { text: 'Редактировать', mod: '2'})
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bowl__footer">
+                                @@include('../blocks/components/logo/logo.html', { mod: 'big'})
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
