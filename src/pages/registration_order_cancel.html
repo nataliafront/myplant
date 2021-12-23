@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Страница оформления заказа (самовывоз, Мск)</title>
+        <title>Страница оформления заказа (окно отмены заказа)</title>
         @@include('./layouts/default.html')
     </head>
     <body>
@@ -262,25 +262,47 @@
                                             </ul>
                                             <div class="tabs-content delivery__tabs-content">
                                                 <div class="tabs-content__item tab-7 is-active">
-                                                    <ul class="info-list delivery__info-list">
-                                                        <li class="info-list__item">
-                                                            <span class="info-list__category">Стоимость: </span>
-                                                            <span class="info-list__value">0 ₽</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="delivery__content">
+                                                    <div class="delivery__content delivery__content--small-gap">
                                                         <div class="delivery__left">
-                                                            <div class="delivery__map">
-                                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69b18c3195fb058788da4cc8ceb5802ecd4f7b072ea55fd2a301a12ba8ab67c8&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
-                                                            </div>
-                                                            <div class="delivery__contact">
-                                                                <p class="delivery__contact-text">
-                                                                    Телефон: 8 (800) 550-13-29<br>
-                                                                    Режим работы: Пн-Пт 11.00-19.00
-                                                                </p>
+                                                            <div class="company">
+                                                                <span class="company__title">СДЭК (Самовывоз)</span>
+                                                                <ul class="info-list company__info-list">
+                                                                    <li class="info-list__item">
+                                                                        <span class="info-list__category">Сроки доставки:</span>
+                                                                        <span class="info-list__value">1-2 дня</span>
+                                                                    </li>
+                                                                    <li class="info-list__item">
+                                                                        <span class="info-list__category">Стоимость:</span>
+                                                                        <span class="info-list__value">215 ₽</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="company__desc">Доставка в один из пунктов самовывоза компании СДЭК</p>
+                                                                @@include('../blocks/components/button/button.html', { text: 'Выбрать пункт выдачи', mod: '2'})
+                                                                <div class="company__address">
+                                                                    <span class="company__address-text">Вы сможете забрать заказ по адресу:</span>
+                                                                    <span class="company__address-value">пр. Наставников, 21, лит.А, пом.15-Н</span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="delivery__right">
+                                                        <div class="delivery__right delivery__right--cancel">
+                                                            <div class="delivery__overlay">
+                                                                <!-- <div class="delivery-cancel">
+                                                                    <div class="delivery-cancel__top">
+                                                                        span.delivery
+                                                                    </div>
+                                                                    <div class="delivery-cancel__bottom"></div>
+                                                                </div> -->
+                                                                <div class="order-delete delivery-delete">
+                                                                    <div class="order-delete__top">
+                                                                        <span class="order-delete__title">Отменить заказ?</span>
+                                                                        <span class="order-delete__text">После отмены заказа выбранный вами товар удалится из корзины</span>
+                                                                    </div>
+                                                                    <div class="order-delete__bottom">
+                                                                        <button class="order-delete__button">Да</button>
+                                                                        <button class="order-delete__button">Нет</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             <div class="payment">
                                                                 <span class="payment__title">Способ оплаты</span>
                                                                 <div class="payment__body">
