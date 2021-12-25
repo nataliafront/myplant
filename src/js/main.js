@@ -63,3 +63,15 @@ const tab = function () {
 };
 
 tab();
+
+const dropdownToggle = () => {
+	const moreBtn = document.querySelectorAll('.files-table__more');
+
+	moreBtn.forEach((item) => {
+		item.addEventListener('click', (event) => {
+			event.currentTarget.closest('.files-table__cell').querySelector('.files-table__dropdown').classList.toggle('files-table__dropdown--opened');
+		})
+	});
+};
+
+dropdownToggle();

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Мои файлы (При выборе файла)</title>
+        @@include('./layouts/default.html')
+    </head>
+    <body>
+        <div class="wrapper">
+            @@include('../blocks/modules/header/header.html')
+            <div class="general">
+                @@include('../blocks/components/menu/menu.html')
+                <main class="main">
+                    <div class="page page--files">
+                        <div class="container">
+                            <div class="page__wrap">
+                                <div class="page__header">
+                                    <h3 class="page-title">Мои файлы</h3>
+                                    <div class="search search--transparent">
+                                        <input type="text" name="" id="" class="search__input" placeholder="Введите название файла или папки">
+                                        <div class="search__icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1751 13.0451C10.0822 13.7837 8.76614 14.2147 7.34932 14.2147C3.56947 14.2147 0.5 11.1417 0.5 7.35737C0.5 3.57308 3.56947 0.5 7.34932 0.5C11.1292 0.5 14.1986 3.57308 14.1986 7.35737C14.1986 8.76607 13.773 10.0768 13.044 11.1671L15.1125 13.2371C15.6292 13.7543 15.6292 14.5948 15.1125 15.1121C14.5959 15.6293 13.7564 15.6293 13.2397 15.1121L11.1751 13.0451V13.0451ZM7.34931 2.92653C9.79256 2.92653 11.775 4.91125 11.775 7.35737C11.775 9.80349 9.79256 11.7882 7.34931 11.7882C4.90607 11.7882 2.92368 9.80349 2.92368 7.35737C2.92368 4.91125 4.90607 2.92653 7.34931 2.92653Z" fill="#ADADAD"/>
+                                            </svg>                                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__body">
+                                    <div class="files">
+                                        <div class="files__header">
+                                            <div class="files__header-wrap">
+                                                @@include('../blocks/components/button/button.html', { text: 'Отправить выбранные файлы на расчет', mod: '2'})
+                                            </div>
+                                        </div>
+                                        <div class="files__body">
+                                            <div class="files-table files-table--small-padding">
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox1">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox2">
+                                                                <label for="checkbox2"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox3">
+                                                                <label for="checkbox3"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox4">
+                                                                <label for="checkbox4"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox5">
+                                                                <label for="checkbox5"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox6">
+                                                                <label for="checkbox6"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox7">
+                                                                <label for="checkbox7"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox8">
+                                                                <label for="checkbox8"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="files-table__row">
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="checkbox checkbox--border">
+                                                                <input type="checkbox" id="checkbox9">
+                                                                <label for="checkbox9"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <div class="files-table__name">
+                                                                <div class="files-table__name-icon">
+                                                                    <img src="../images/content/files-table-img1.png" alt="">
+                                                                </div>
+                                                                <span class="files-table__text">Название файла.stl</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">27 мб</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <span class="files-table__text">07.12.2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="files-table__column">
+                                                        <div class="files-table__cell">
+                                                            <button class="files-table__more">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="5" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="12" cy="12" r="2" fill="#5C5C5C"/>
+                                                                    <circle cx="19" cy="12" r="2" fill="#5C5C5C"/>
+                                                                </svg>                                                                                                                                        
+                                                            </button>
+                                                            <div class="files-table__dropdown">
+                                                                <div class="files-table__dropdown-list">
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Переименовать</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Удалить</a>
+                                                                    </div>
+                                                                    <div class="files-table__dropdown-item">
+                                                                        <a href="#" class="files-table__dropdown-link">Скачать</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+
+        <script src="js/vendor/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
