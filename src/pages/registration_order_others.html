@@ -241,11 +241,13 @@
                                                 <li class="tabs-nav__item" data-tab-name="tab-6">Челябинск</li>
                                             </ul>
                                             <div class="search city__search">
-                                                <input type="text" name="" id="" class="search__input" placeholder="Введите название города">
-                                                <div class="search__icon">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1751 13.0451C10.0822 13.7837 8.76614 14.2147 7.34932 14.2147C3.56947 14.2147 0.5 11.1417 0.5 7.35737C0.5 3.57308 3.56947 0.5 7.34932 0.5C11.1292 0.5 14.1986 3.57308 14.1986 7.35737C14.1986 8.76607 13.773 10.0768 13.044 11.1671L15.1125 13.2371C15.6292 13.7543 15.6292 14.5948 15.1125 15.1121C14.5959 15.6293 13.7564 15.6293 13.2397 15.1121L11.1751 13.0451V13.0451ZM7.34931 2.92653C9.79256 2.92653 11.775 4.91125 11.775 7.35737C11.775 9.80349 9.79256 11.7882 7.34931 11.7882C4.90607 11.7882 2.92368 9.80349 2.92368 7.35737C2.92368 4.91125 4.90607 2.92653 7.34931 2.92653Z" fill="#ADADAD"/>
-                                                    </svg>                                                        
+                                                <div class="field">
+                                                    <input type="text" name="" id="" class="field__input search__input" placeholder="Введите название города">
+                                                    <div class="search__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1751 13.0451C10.0822 13.7837 8.76614 14.2147 7.34932 14.2147C3.56947 14.2147 0.5 11.1417 0.5 7.35737C0.5 3.57308 3.56947 0.5 7.34932 0.5C11.1292 0.5 14.1986 3.57308 14.1986 7.35737C14.1986 8.76607 13.773 10.0768 13.044 11.1671L15.1125 13.2371C15.6292 13.7543 15.6292 14.5948 15.1125 15.1121C14.5959 15.6293 13.7564 15.6293 13.2397 15.1121L11.1751 13.0451V13.0451ZM7.34931 2.92653C9.79256 2.92653 11.775 4.91125 11.775 7.35737C11.775 9.80349 9.79256 11.7882 7.34931 11.7882C4.90607 11.7882 2.92368 9.80349 2.92368 7.35737C2.92368 4.91125 4.90607 2.92653 7.34931 2.92653Z" fill="#ADADAD"/>
+                                                        </svg>                                                        
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -337,29 +339,41 @@
                                                     <div class="delivery__content">
                                                         <div class="delivery__left">
                                                             <form action="" class="delivery-form" method="post">
-                                                                <input type="text" class="delivery-form__input" placeholder="Город">
-                                                                <input type="text" class="delivery-form__input delivery-form__input--validate" placeholder="Улица, дом, офис">
-                                                                <input type="number" class="delivery-form__input delivery-form__input--validate" placeholder="Почтовый индекс">
-                                                                <input type="text" class="delivery-form__input delivery-form__input--validate" placeholder="Контактное лицо, принимающее посылку">
-                                                                <input type="tel" class="delivery-form__input delivery-form__input--validate" placeholder="+7 (913) 042-23-42">
-                                                                <textarea class="delivery-form__input delivery-form__textarea" placeholder="Комментарии к заказу"></textarea>
+                                                                <div class="field">
+                                                                    <input type="text" class="field__input delivery-form__input" placeholder="Город">
+                                                                </div>
+                                                                <div class="field">
+                                                                    <input type="text" class="field__input delivery-form__input delivery-form__input--validate" placeholder="Улица, дом, офис">
+                                                                </div>
+                                                                <div class="field">
+                                                                    <input type="number" class="field__input delivery-form__input delivery-form__input--validate" placeholder="Почтовый индекс">
+                                                                </div>
+                                                                <div class="field">
+                                                                    <input type="text" class="field__input delivery-form__input delivery-form__input--validate" placeholder="Контактное лицо, принимающее посылку">
+                                                                </div>
+                                                                <div class="field">
+                                                                    <input type="tel" class="field__input delivery-form__input delivery-form__input--validate" placeholder="+7 (913) 042-23-42">
+                                                                </div>
+                                                                <div class="field">
+                                                                    <textarea class="field__input delivery-form__input delivery-form__textarea" placeholder="Комментарии к заказу"></textarea>
+                                                                </div>
                                                             </form>
                                                         </div>
                                                         <div class="delivery__right">
                                                             <div class="payment">
                                                                 <span class="payment__title">Способ оплаты</span>
                                                                 <div class="payment__body">
-                                                                    <div class="checkbox checkbox--rect">
-                                                                        <input type="checkbox" id="checkbox1">
-                                                                        <label for="checkbox1">Онлайн оплата картой</label>
+                                                                    <div class="payment__item">
+                                                                        <input type="radio" name="payment" id="payment1">
+                                                                        <label for="payment1">Онлайн оплата картой</label>
                                                                     </div>
-                                                                    <div class="checkbox checkbox--rect">
-                                                                        <input type="checkbox" id="checkbox2">
-                                                                        <label for="checkbox2">Оплата по счету</label>
+                                                                    <div class="payment__item">
+                                                                        <input type="radio" name="payment" id="payment2">
+                                                                        <label for="payment2">Оплата по счету</label>
                                                                     </div>
-                                                                    <div class="checkbox checkbox--rect">
-                                                                        <input type="checkbox" id="checkbox3">
-                                                                        <label for="checkbox3">Оплата наличными</label>
+                                                                    <div class="payment__item">
+                                                                        <input type="radio" name="payment" id="payment3">
+                                                                        <label for="payment3">Оплата наличными</label>
                                                                     </div>
                                                                 </div>
                                                             </div>

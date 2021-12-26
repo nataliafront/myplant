@@ -109,6 +109,7 @@
 
         @media screen and (max-width: 1100px) {
             font-size: 12px;
+            gap: 5px;
         }
 
         &:hover {
@@ -143,11 +144,17 @@
         line-height: 130%;
         color: $dark-blue;
         border: 1px solid transparent;
+        transition: 0.2s;
 
         &:hover {
             background-color: #fff;
-            color: $dark-blue;
-            border: 1px solid $dark-blue;
+            color: $red;
+
+            svg {
+                path {
+                    fill: $red;
+                }
+            }
         }
 
         @media screen and (max-width: 940px) {

@@ -68,6 +68,15 @@
                         }
                     }
                 }
+
+                .menu__icon--fill {
+                    svg {
+                        path {
+                            fill: $black;
+                            transition: 0.2s;
+                        }
+                    }
+                }
             }
 
             .menu__text {

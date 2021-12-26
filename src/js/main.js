@@ -43,22 +43,20 @@ const tab = function () {
 		item.addEventListener('click', selectTabNav)
 	});
 
-	function selectTabNav() {
-		tabNav.forEach((item) => {
+	function selectTabNav(evt) {
+		evt.currentTarget.closest('.tabs-nav').querySelectorAll('.tabs-nav__item').forEach((item) => {
 			// Удаляем активный класс у всех элементов навигации табов
 			item.classList.remove('tabs-nav__item--active');
 		});
 		this.classList.add('tabs-nav__item--active');  // Добавляем активный укласс у элемента по которому кликнули
 		tabName = this.getAttribute('data-tab-name'); // Получаем имя таба, который нам нужен
-		selectTabContent(tabName); // Запускаем функцию, чтобы показать выбранный таб
-	}
 
-	function selectTabContent(tab) {
-		// Проходим по всем табам и проверяем есть ли у элемента класс, равный имени таба(переменной tabName). Если есть, то добавляем класс активного таба, если нет, то удаляем этот класс
-		tabContent.forEach((item) => {
+		console.log(evt.currentTarget.closest('.tabs-nav'))
+
+		evt.currentTarget.closest('.tabs-nav').nextElementSibling.querySelectorAll('.tabs-content__item').forEach((item) => {
 			const { classList } = item;
-			classList.contains(tab) ? classList.add('is-active') : classList.remove('is-active');
-		});
+			classList.contains(tabName) ? classList.add('is-active') : classList.remove('is-active');
+		}); // Запускаем функцию, чтобы показать выбранный таб
 	}
 };
 
